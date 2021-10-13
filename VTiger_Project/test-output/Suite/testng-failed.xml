@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="Test2-firefox(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="Project.TC_41to45_organisation">
+        <methods>
+          <include name="logOutofApp"/>
+          <include name="closeDBConnection"/>
+          <include name="createOrgWithoutNotify"/>
+          <include name="launchBrowser"/>
+          <include name="createOrg2"/>
+          <include name="logintoApp"/>
+          <include name="createOrg3"/>
+          <include name="createOrg"/>
+          <include name="connectDB"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- Project.TC_41to45_organisation -->
+    </classes>
+  </test> <!-- Test2-firefox(failed) -->
+  <test thread-count="5" name="Test1-chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Project.TC_41to45_organisation">
+        <methods>
+          <include name="logOutofApp"/>
+          <include name="closeDBConnection"/>
+          <include name="createOrgWithoutNotify"/>
+          <include name="launchBrowser"/>
+          <include name="logintoApp"/>
+          <include name="connectDB"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- Project.TC_41to45_organisation -->
+    </classes>
+  </test> <!-- Test1-chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
