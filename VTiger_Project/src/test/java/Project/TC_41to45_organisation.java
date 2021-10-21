@@ -33,7 +33,7 @@ public class TC_41to45_organisation extends BaseClass {
 		
 		HomePageInfo hp=new HomePageInfo(driver);
      	hp.searchOrg("ACC1"+Keys.ENTER);
-     	Assert.fail();
+     	Assert.assertEquals("A", "B");
 
 	}
 

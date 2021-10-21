@@ -22,7 +22,7 @@ public class JavaUtility {
 	public static String getCurrentDate()
 	{
 		Date date=new Date();
-		String currentdate = date.toString();
+		String currentdate = date.toString().replace(" ", "_").replace(":", "_");
 		return currentdate;
 	}
 

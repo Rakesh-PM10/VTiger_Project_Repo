@@ -3,17 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Project.TC_41to45_organisation">
+      <class name="Project.TC_58_createLead">
         <methods>
-          <include name="logOutofApp"/>
-          <include name="closeDBConnection"/>
-          <include name="searchOrg"/>
-          <include name="launchBrowser"/>
-          <include name="logintoApp"/>
-          <include name="connectDB"/>
-          <include name="closeBrowser"/>
+          <include name="login"/>
+          <include name="logout"/>
+          <include name="createLeadAndDelete"/>
         </methods>
-      </class> <!-- Project.TC_41to45_organisation -->
+      </class> <!-- Project.TC_58_createLead -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
